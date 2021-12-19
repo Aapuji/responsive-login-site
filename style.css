@@ -3,6 +3,26 @@
   color: black;
 }
 
+/* Variables */
+:root {
+  
+  /* Colors, when in light-mode */
+  --bg-color: white;
+}
+
+/* Prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+  }
+}
+
+/* Body */
+
+body {
+  background-color: var(--bg-color);
+}
+
 /* Container */
 .container {
   display: flex;
